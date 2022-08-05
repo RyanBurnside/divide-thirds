@@ -9,9 +9,7 @@
 
  ;; Widgets and top level parameters
  SF-IMAGE       "Image"          0
- SF-DRAWABLE    "Drawable"       0
- SF-ADJUSTMENT  "Steps Across"  '(7 2 16 1 1 0 SF-SLIDER)
- SF-ADJUSTMENT  "Steps Down"    '(7 2 16 1 1 0 SF-SLIDER))
+ SF-DRAWABLE    "Drawable"       0)
 
 
 ;; Register the main function
