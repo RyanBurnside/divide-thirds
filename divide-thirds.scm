@@ -16,6 +16,7 @@
 (script-fu-menu-register "script-fu-divide-thirds"
                          "<Image>/Script-Fu/")
 
+
 ;; Main function
 (define (script-fu-divide-thirds the-image the-drawable)
   (script-fu-guide-new-percent the-image the-drawable 0 66.666)
