@@ -1,11 +1,13 @@
+;; Yes, I know Python exists but how rare and cool it is to work in Scheme!
+
 (script-fu-register
- "script-fu-divide-thirds"                        ;func name
- "Divide into thirds using guides."               ;menu label
- "Divide the canvas into thirds by adding guides" ;Description
- "Ryan Burnside"                                  ;author
- "No copyright protection"                        ;copyright
- "August 4 2022"                                  ;date
- ""                                               ;image type
+ "script-fu-divide-thirds"                         ;func name
+ "Divide into thirds using guides."                ;menu label
+ "Divide the canvas into thirds by adding guides." ;Description
+ "Ryan Burnside"                                   ;author
+ "No copyright protection"                         ;copyright
+ "August 4 2022"                                   ;date
+ ""                                                ;image type
 
  ;; Widgets and top level parameters
  SF-IMAGE       "Image"          0
@@ -16,10 +18,41 @@
 (script-fu-menu-register "script-fu-divide-thirds"
                          "<Image>/Script-Fu/")
 
-
 ;; Main function
 (define (script-fu-divide-thirds the-image the-drawable)
   (script-fu-guide-new-percent the-image the-drawable 0 66.666)
   (script-fu-guide-new-percent the-image the-drawable 0 33.333)
   (script-fu-guide-new-percent the-image the-drawable 1 66.666)
   (script-fu-guide-new-percent the-image the-drawable 1 33.333))
+
+
+(script-fu-register
+ "script-fu-frame-guides"             ;func name
+ "Frame the image using guides."      ;menu label
+ "Frame the canvas by adding guides." ;Description
+ "Ryan Burnside"                      ;author
+ "No copyright protection"            ;copyright
+ "August 4 2022"                      ;date
+ ""                                   ;image type
+
+ ;; Widgets and top level parameters
+ SF-IMAGE       "Image"          0
+ SF-DRAWABLE    "Drawable"       0)
+
+
+;; Register the main function
+(script-fu-menu-register "script-fu-frame-guides"
+                         "<Image>/Script-Fu/")
+
+;; Main function
+(define (script-fu-frame-guides the-image the-drawable)
+  (script-fu-guide-new-percent the-image the-drawable 0 100)
+  (script-fu-guide-new-percent the-image the-drawable 0 0)
+  (script-fu-guide-new-percent the-image the-drawable 1 100)
+  (script-fu-guide-new-percent the-image the-drawable 1 0))
+
+
+;; TODO interface to provide for <divisions across> and <divisions down>
+;; Easy peason lemon squeezy. (But later, it's late tonight)
+
+
