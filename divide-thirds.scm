@@ -25,7 +25,7 @@
 ;; Helper function
 (define (script-fu-divide-sections the-image the-drawable divisions horiz) ;0 for horiz 1 for vert
   (let loop ((i 0))
-    (when (< i divisions)
+    (when (<= i divisions)
       (script-fu-guide-new-percent the-image the-drawable horiz (* (/ i divisions) 100.0))
       (loop (+ i 1)))))
 
