@@ -1,11 +1,15 @@
+;;;; Ryan Burnside GIMP tinkerings
+;;;; Yeah, could have used Python but Scheme is more fun. Mostly.
+
+
 (script-fu-register
- "script-fu-divide-grid"                         ;func name
+ "script-fu-divide-grid"                                     ;func name
  "Divide into rows and columns using guides."                ;menu label
  "Divide the canvas into rows and columns by adding guides." ;Description
- "Ryan Burnside"                                   ;author
- "No copyright protection"                         ;copyright
- "August 4 2022"                                   ;date
- ""                                                ;image type
+ "Ryan Burnside"                                             ;author
+ "No copyright protection"                                   ;copyright
+ "August 4 2022"                                             ;date
+ ""                                                          ;image type
 
  ;; Widgets and top level parameters
  SF-IMAGE       "Image"          0
