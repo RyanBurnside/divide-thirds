@@ -15,9 +15,10 @@ This is a very simple Gimp Script-Fu script to divide a canvas quickly into thir
   
   For me on Linux it's `~/.config/GIMP/3.x/plug-ins/`
   
-  Mare sure that the locale directory was copied (even if empty) and that the 
-  divide-thirds-v3.scm is executable. Both are requirements for any
-  plug-in in Gimp 3.x.
+  Mare sure that the `locale` directory was copied (even if empty) and that the 
+  `divide-thirds-v3.scm` file is executable. 
+
+  Both are requirements for any plug-in in Gimp 3.x.
 
 
 Doing any of the above, regardless of the Gimp version, will add a new option
